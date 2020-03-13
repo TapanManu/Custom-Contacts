@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/contactsapp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivCall"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo1"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_call_black_24dp" />
+
+    <ImageView
+        android:id="@+id/ivWeb"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo2"
+        android:focusable="true"
+        app:srcCompat="@drawable/web" />
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/todo3"
+        android:focusable="true"
+        app:srcCompat="@drawable/place" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/create_new_contact"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF" />
+</LinearLayout>

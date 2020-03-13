@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context=".Contact">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/webpage"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/map"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/create"
+        android:textColor="@android:color/background_light" />
+</LinearLayout>

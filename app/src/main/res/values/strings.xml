@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Custom Contacts</string>
+    <string name="contactsapp">ContactsApp</string>
+    <string name="todo1">TODO1</string>
+    <string name="todo2">TODO2</string>
+    <string name="todo3">TODO3</string>
+    <string name="create_new_contact">CREATE NEW CONTACT</string>
+    <string name="name">Name</string>
+    <string name="phone_number">phone number</string>
+    <string name="webpage">WebPage</string>
+    <string name="map">Map</string>
+    <string name="create">Create</string>
+</resources>
