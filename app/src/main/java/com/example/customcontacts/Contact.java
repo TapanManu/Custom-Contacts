@@ -2,6 +2,7 @@ package com.example.customcontacts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,8 +25,21 @@ public class Contact extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(etName.getText().toString().isEmpty()){
+                if(etName.getText().toString().isEmpty()||etPhone.getText().toString().isEmpty()
+                ||etWeb.getText().toString().isEmpty()||etMap.getText().toString().isEmpty()){
                     Toast.makeText(Contact.this,"Please enter all fields",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    String name = etName.getText().toString().trim();
+                    String phone = etPhone.getText().toString().trim();
+                    String web = etWeb.getText().toString().trim();
+                    String map = etMap.getText().toString().trim();
+                    Intent intent = new Intent();
+                    intent.putExtra("phone",phone);
+                    intent.putExtra("website:",web);
+                    intent.putExtra("map:",map);
+                    setResult(RESULT_OK,intent);
+                    Contact.this.finish();
                 }
             }
         });
