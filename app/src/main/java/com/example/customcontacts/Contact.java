@@ -36,8 +36,8 @@ public class Contact extends AppCompatActivity {
                     String map = etMap.getText().toString().trim();
                     Intent intent = new Intent();
                     intent.putExtra("phone",phone);
-                    intent.putExtra("website:",web);
-                    intent.putExtra("map:",map);
+                    intent.putExtra("website",web);
+                    intent.putExtra("map",map);
                     setResult(RESULT_OK,intent);
                     Contact.this.finish();
                 }

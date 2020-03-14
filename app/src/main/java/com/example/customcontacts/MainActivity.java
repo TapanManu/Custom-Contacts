@@ -47,10 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 ivCall.setVisibility(View.VISIBLE);
                 ivWeb.setVisibility(View.VISIBLE);
                 ivMap.setVisibility(View.VISIBLE);
+                final String phone = data.getStringExtra("phone");
+                final String map = data.getStringExtra("map");
+                final String webpage = data.getStringExtra("website");
                 ivCall.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        final String phone = data.getStringExtra("phone");
+
                         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phone));
                         startActivity(intent);
                     }
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 ivMap.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        final String map = data.getStringExtra("map");
+
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0q="+map));
                         startActivity(intent);
                     }
@@ -66,10 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 ivWeb.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String webpage = data.getStringExtra("website");
-                        webpage = "http://"+ webpage;
-                        Uri url = Uri.parse(webpage);
-                        Intent intent = new Intent(Intent.ACTION_VIEW,url);
+                        Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("http://"+webpage));
                         startActivity(intent);
                     }
                 });
